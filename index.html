@@ -1,82 +1,16 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Centro legal oficial de Unidad, bot para comunidades de Discord.">
-  <meta name="theme-color" content="#5865F2">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; upgrade-insecure-requests">
-  <title>Centro legal · Unidad</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/theme-init.js"></script>
-  <script src="assets/js/app.js" defer></script>
-</head>
-<body data-title-es="Centro legal · Unidad" data-title-en="Legal center · Unidad">
-  <div class="site-shell">
-    <div class="orb orb--violet -left-28 -top-24 h-96 w-96" aria-hidden="true"></div>
-    <div class="orb orb--pink -right-28 top-1/3 h-80 w-80" aria-hidden="true"></div>
-    <div class="orb orb--green left-1/4 top-[70%] h-72 w-72" aria-hidden="true"></div>
-    <div class="orb orb--cyan -bottom-32 left-1/2 h-80 w-80" aria-hidden="true"></div>
-
-    <header class="glass-nav sticky top-0 z-40">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4" aria-label="Principal">
-        <a href="./" class="flex items-center gap-3 rounded-xl" aria-label="Unidad, inicio">
-          <img src="assets/media/unidad.png" alt="" aria-hidden="true" class="brand-logo">
-          <span><strong class="block text-sm font-black tracking-tight">Unidad</strong><span class="block text-xs text-[rgb(var(--muted))]" data-lang="es">Centro legal</span><span class="block text-xs text-[rgb(var(--muted))]" data-lang="en" hidden>Legal center</span></span>
-        </a>
-        <div class="flex items-center gap-2">
-          <div class="preference-group" aria-label="Idioma / Language">
-            <button class="preference-button" type="button" data-language-value="es" aria-pressed="true">ES</button>
-            <button class="preference-button" type="button" data-language-value="en" aria-pressed="false">EN</button>
-          </div>
-          <div class="preference-group" aria-label="Tema / Theme">
-            <button class="preference-button" type="button" data-theme-value="system" aria-pressed="true" title="Sistema / System">◐</button>
-            <button class="preference-button" type="button" data-theme-value="light" aria-pressed="false" title="Claro / Light">☀</button>
-            <button class="preference-button" type="button" data-theme-value="dark" aria-pressed="false" title="Oscuro / Dark">☾</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="relative mx-auto max-w-6xl px-5 py-16 md:py-24">
-      <section class="glass-panel overflow-hidden rounded-[2rem] px-6 py-12 text-center md:px-12 md:py-20">
-        <img src="assets/media/unidad.png" alt="Unidad" class="hero-logo">
-        <span class="eyebrow"><span class="status-dot"></span><span data-lang="es">Transparencia primero</span><span data-lang="en" hidden>Transparency first</span></span>
-        <div data-lang="es">
-          <h1 class="heading-gradient mx-auto mt-6 max-w-3xl text-4xl font-black tracking-[-0.04em] md:text-6xl">Reglas claras para una comunidad mejor.</h1>
-          <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-[rgb(var(--muted))] md:text-lg">Conoce cómo Unidad protege los datos de tu comunidad y las reglas que mantienen el servicio seguro, útil y justo.</p>
-        </div>
-        <div data-lang="en" hidden>
-          <h1 class="heading-gradient mx-auto mt-6 max-w-3xl text-4xl font-black tracking-[-0.04em] md:text-6xl">Clear rules for a better community.</h1>
-          <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-[rgb(var(--muted))] md:text-lg">Learn how Unidad protects your community data and the rules that keep the service safe, useful, and fair.</p>
-        </div>
-        <div class="mt-9 flex flex-wrap justify-center gap-3">
-          <a class="primary-link" href="privacidad/"><span aria-hidden="true">⌁</span><span data-lang="es">Política de Privacidad</span><span data-lang="en" hidden>Privacy Policy</span></a>
-          <a class="secondary-link" href="terminos/"><span aria-hidden="true">✓</span><span data-lang="es">Condiciones del Servicio</span><span data-lang="en" hidden>Terms of Service</span></a>
-        </div>
-      </section>
-
-      <section class="mt-8 grid gap-5 md:grid-cols-2" aria-label="Documentos legales">
-        <a href="privacidad/" class="document-card group">
-          <span class="icon-tile bg-[#5865F2]/20 text-[#5865F2]" aria-hidden="true">⌁</span>
-          <div data-lang="es"><h2 class="mt-6 text-2xl font-black">Privacidad por diseño</h2><p class="mt-3 leading-7 text-[rgb(var(--muted))]">Qué datos procesa Unidad, por qué los necesita, cuánto tiempo se conservan y cómo solicitar su eliminación.</p><span class="mt-6 inline-flex font-bold text-[#5865F2]">Leer política <span class="ml-2 transition group-hover:translate-x-1">→</span></span></div>
-          <div data-lang="en" hidden><h2 class="mt-6 text-2xl font-black">Privacy by design</h2><p class="mt-3 leading-7 text-[rgb(var(--muted))]">What data Unidad processes, why it is needed, how long it is kept, and how to request its deletion.</p><span class="mt-6 inline-flex font-bold text-[#5865F2]">Read policy <span class="ml-2 transition group-hover:translate-x-1">→</span></span></div>
-        </a>
-        <a href="terminos/" class="document-card group">
-          <span class="icon-tile bg-[#57F287]/20 text-[#248046]" aria-hidden="true">✓</span>
-          <div data-lang="es"><h2 class="mt-6 text-2xl font-black">Uso responsable</h2><p class="mt-3 leading-7 text-[rgb(var(--muted))]">Las condiciones que aceptas al instalar o utilizar Unidad dentro de una comunidad de Discord.</p><span class="mt-6 inline-flex font-bold text-[#5865F2]">Leer condiciones <span class="ml-2 transition group-hover:translate-x-1">→</span></span></div>
-          <div data-lang="en" hidden><h2 class="mt-6 text-2xl font-black">Responsible use</h2><p class="mt-3 leading-7 text-[rgb(var(--muted))]">The terms you accept when installing or using Unidad within a Discord community.</p><span class="mt-6 inline-flex font-bold text-[#5865F2]">Read terms <span class="ml-2 transition group-hover:translate-x-1">→</span></span></div>
-        </a>
-      </section>
-    </main>
-
-    <footer class="relative border-t border-[#5865F2]/10">
-      <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#5865F2]/40 to-transparent"></div>
-      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-[rgb(var(--muted))] sm:flex-row sm:items-center sm:justify-between">
-        <p>© <span data-current-year></span> Unidad. <span data-lang="es">Construido para comunidades de Discord.</span><span data-lang="en" hidden>Built for Discord communities.</span></p>
-        <p data-lang="es">Última actualización: 29 de agosto de 2026</p><p data-lang="en" hidden>Last updated: August 29, 2026</p>
-      </div>
-    </footer>
-  </div>
-</body>
+<html lang="es" data-theme="system">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro legal oficial de Unidad, bot para comunidades de Discord.">
+    <meta name="theme-color" content="#282058">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; upgrade-insecure-requests">
+    <title>Centro legal · Unidad</title>
+    <script type="module" src="./src/theme-init.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
 </html>
