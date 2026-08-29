@@ -20,8 +20,8 @@ export default function LegalPage({ document, page }) {
 
   return (
     <SiteLayout navigationGroups={navigationGroups} page={page}>
-      <Container maxWidth="lg" className="py-10 md:py-14">
-        <header className="mb-9">
+      <Container maxWidth="lg" className="py-7 sm:py-10 lg:py-12">
+        <header className="mb-7 sm:mb-9">
           <Button component={RouterLink} to={paths.home} startIcon={<ArrowBackRounded />} className="!-ml-2">
             {language === "es" ? "Volver al Centro legal" : "Back to Legal center"}
           </Button>
@@ -32,17 +32,17 @@ export default function LegalPage({ document, page }) {
               label={document.eyebrow[language]}
               variant="outlined"
             />
-            <Typography component="h1" variant="h1" className="!mt-5 !text-4xl md:!text-5xl">{document.title[language]}</Typography>
+            <Typography component="h1" variant="h1" className="!mt-5 !text-3xl !leading-tight sm:!text-4xl xl:!text-5xl">{document.title[language]}</Typography>
             <Typography color="text.secondary" className="!mt-3 !text-sm">
               {language === "es" ? "Última actualización" : "Last updated"}: {document.updated[language]} · {language === "es" ? "Versión" : "Version"} 2.0
             </Typography>
           </div>
-          <Alert className="single-line-alert glass-hero !mt-6 !rounded-xl md:!w-fit" icon={isPrivacy ? <PrivacyTipRounded /> : <GavelRounded />} severity={isPrivacy ? "info" : "warning"} variant="outlined">
+          <Alert className="single-line-alert glass-hero !mt-6 !w-full !rounded-xl xl:!w-fit" icon={isPrivacy ? <PrivacyTipRounded /> : <GavelRounded />} severity={isPrivacy ? "info" : "warning"} variant="outlined">
             {document.summary[language]}
           </Alert>
         </header>
 
-        <Paper className="glass-card !rounded-2xl !px-6 !py-8 md:!px-10 md:!py-10" elevation={0}>
+        <Paper className="glass-card min-w-0 !rounded-2xl !px-5 !py-7 sm:!px-7 sm:!py-8 xl:!px-10 xl:!py-10" elevation={0}>
           <DocumentBody language={language} sections={document.sections} />
         </Paper>
       </Container>

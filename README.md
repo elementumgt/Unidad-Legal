@@ -1,6 +1,19 @@
-# Unidad Legal
+<p align="center">
+  <img src="assets/media/unidad.png" alt="Logo de Unidad" width="160" height="160">
+</p>
 
-Centro legal bilingüe del bot de Discord **Unidad**, construido con React, Vite, Material UI y Tailwind CSS.
+<h1 align="center">Unidad Docs</h1>
+
+<p align="center">
+  Centro bilingüe de documentación, privacidad y condiciones del servicio para el bot de Discord <strong>Unidad</strong>.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&amp;logoColor=111827" alt="React 19">
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?logo=vite&amp;logoColor=white" alt="Vite 8">
+  <img src="https://img.shields.io/badge/Material_UI-9-007FFF?logo=mui&amp;logoColor=white" alt="Material UI 9">
+  <img src="https://img.shields.io/badge/GitHub_Pages-publicado-222222?logo=githubpages&amp;logoColor=white" alt="Publicado con GitHub Pages">
+</p>
 
 ## Páginas
 

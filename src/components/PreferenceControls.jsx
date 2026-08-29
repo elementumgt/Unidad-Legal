@@ -11,9 +11,9 @@ export default function PreferenceControls() {
     : { language: "Language", system: "System theme", light: "Light theme", dark: "Dark theme" };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex shrink-0 items-center gap-1 sm:gap-2">
       <ToggleButtonGroup
-        className="glass-control"
+        className="glass-control shrink-0"
         exclusive
         size="small"
         value={language}
@@ -25,7 +25,7 @@ export default function PreferenceControls() {
       </ToggleButtonGroup>
 
       <ToggleButtonGroup
-        className="glass-control"
+        className="glass-control shrink-0"
         exclusive
         size="small"
         value={theme}
