@@ -70,9 +70,9 @@ function SidebarContent({ collapsed, navigationGroups, onNavigate, page }) {
                         selected={activeId === item.id}
                         aria-current={activeId === item.id ? "location" : undefined}
                         onClick={onNavigate}
-                        className="!mb-0.5 !rounded-lg !px-3 !py-1.5"
+                        className="!mb-0.5 !rounded-lg border-l-[3px] border-l-transparent !px-3 !py-1.5"
                         key={item.id}
-                        sx={{ "&.Mui-selected": { borderLeft: "3px solid", borderColor: "primary.main" } }}
+                        sx={{ "&.Mui-selected": { borderLeftColor: "primary.main" } }}
                       >
                         <ListItemText primary={item.label[language]} primaryTypographyProps={{ fontSize: 12.5, lineHeight: 1.35, fontWeight: activeId === item.id ? 750 : 500 }} />
                       </ListItemButton>
@@ -91,7 +91,7 @@ function SidebarContent({ collapsed, navigationGroups, onNavigate, page }) {
 export default function AppSidebar({ collapsed, mobileOpen, navigationGroups, onCloseMobile, page }) {
   return (
     <>
-      <aside className={`glass-card hidden h-full shrink-0 overflow-hidden !rounded-none border-y-0 border-l-0 transition-[width] duration-200 md:block ${collapsed ? "w-[72px]" : "w-[280px]"}`}>
+      <aside className={`glass-card hidden h-full shrink-0 overflow-hidden !rounded-none border-y-0 border-l-0 transition-[width] duration-200 lg:block ${collapsed ? "w-[72px]" : "w-[280px]"}`}>
         <SidebarContent collapsed={collapsed} navigationGroups={navigationGroups} page={page} />
       </aside>
       <Drawer
@@ -99,7 +99,7 @@ export default function AppSidebar({ collapsed, mobileOpen, navigationGroups, on
         onClose={onCloseMobile}
         variant="temporary"
         ModalProps={{ keepMounted: true }}
-        sx={{ display: { xs: "block", md: "none" }, "& .MuiDrawer-paper": { width: 300, backgroundImage: "var(--glass-nav)", backdropFilter: "blur(16px)" } }}
+        sx={{ display: { xs: "block", lg: "none" }, "& .MuiDrawer-paper": { width: "min(320px, calc(100vw - 24px))", backgroundImage: "var(--glass-nav)", backdropFilter: "blur(16px)" } }}
       >
         <SidebarContent collapsed={false} navigationGroups={navigationGroups} onNavigate={onCloseMobile} page={page} />
       </Drawer>

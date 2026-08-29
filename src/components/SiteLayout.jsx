@@ -16,7 +16,7 @@ export default function SiteLayout({ children, navigationGroups = [], page }) {
   }
 
   return (
-    <div className="flex h-screen min-h-[520px] flex-col overflow-hidden">
+    <div className="flex h-dvh min-h-[520px] w-full flex-col overflow-hidden">
       <div className="page-background" aria-hidden="true" />
       <SiteHeader collapsed={collapsed} onOpenMobile={() => setMobileOpen(true)} onToggleCollapsed={toggleCollapsed} page={page} />
       <div className="flex min-h-0 flex-1 overflow-hidden">

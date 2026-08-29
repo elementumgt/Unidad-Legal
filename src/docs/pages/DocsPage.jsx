@@ -114,12 +114,12 @@ export default function DocsPage() {
 
   return (
     <SiteLayout navigationGroups={navigationGroups} page="docs">
-      <Container maxWidth="lg" className="py-10 md:py-14">
+      <Container maxWidth="lg" className="py-7 sm:py-10 lg:py-12">
         <header id="overview" className="scroll-mt-5">
           <Chip color="primary" icon={<MenuBookRounded />} label={labels.eyebrow} variant="outlined" />
-          <Typography component="h1" variant="h1" className="!mt-5 !text-4xl md:!text-5xl">{labels.title}</Typography>
+          <Typography component="h1" variant="h1" className="!mt-5 !text-3xl !leading-tight sm:!text-4xl xl:!text-5xl">{labels.title}</Typography>
           <Typography color="text.secondary" className="!mt-3 max-w-3xl !text-base !leading-7">{labels.intro}</Typography>
-          <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
             <StatCard value={commandCount} label={labels.commands} />
             <StatCard value={actionCount} label={labels.actions} />
             <StatCard value={commandGroups.length} label={labels.groups} />
